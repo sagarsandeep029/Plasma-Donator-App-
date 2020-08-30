@@ -1,5 +1,7 @@
 # PlasmaDonarApp
 
+Plasma_Donater_App1 folder contains Spring Boot applications
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
 ## Development server
