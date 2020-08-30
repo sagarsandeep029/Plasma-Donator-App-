@@ -1,0 +1,97 @@
+<form>
+    
+    <div class="form-group">
+        <label>User ID:</label>
+        <input type="text"
+        name="nametxt"
+        [(ngModel)]="var_userid" class="form-control" required/>
+
+    </div>
+    <div class="form-group">
+        <label>Full Name:</label>
+        <input type="text"
+        name="nametxt"
+        [(ngModel)]="var_name" class="form-control" required/>
+
+    </div>
+    <div class="form-group">
+        <label>Blood Group:</label>
+        <select class="form-control" name="branchcb" [(ngModel)]="var_bgroup">
+            <option *ngFor="let b of bloodgrp"
+            [value]="b"
+            >
+            {{b}}</option>
+        </select>
+
+    </div>
+    <div class="form-group">
+        <label>Mobile Number:</label>
+        <input type="tel"
+        name="nametxt"
+        [(ngModel)]="var_number" class="form-control" required/>
+
+    </div>
+    <div class="form-group">
+        <label>Country:</label>
+        <select class="form-control" name="branchcb" [(ngModel)]="var_country">
+            <option *ngFor="let b of country"
+            [value]="b"
+            >
+            {{b}}</option>
+        </select>
+
+    </div>
+    <div class="form-group">
+        <label>State:</label>
+        <select class="form-control" name="branchcb" [(ngModel)]="var_state">
+            <option *ngFor="let a of state"
+            [value]="a"
+            >
+            {{a}}</option>
+        </select>
+
+    </div>
+    <div class="form-group">
+        <label>District:</label>
+        <select class="form-control" name="branchcb" [(ngModel)]="var_district">
+            <option *ngFor="let c of district"
+            [value]="c"
+            >
+            {{c}}</option>
+        </select>
+
+    </div>
+    <div class="form-group">
+        <label>City:</label>
+        <select class="form-control" name="branchcb" [(ngModel)]="var_city">
+            <option *ngFor="let c of city"
+            [value]="c"
+            >
+            {{c}}</option>
+        </select>
+
+    </div>
+    <div class="form-group">
+        <label>Email Id:</label>
+        <input type="email"
+        name="emailtxt"
+        [(ngModel)]="var_email"
+        class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label>Password:</label>
+        <input type="password"
+        name="nametxt"
+        [(ngModel)]="var_name" class="form-control" required/>
+
+    </div>
+   
+    <button class="btn btn-success"
+    (click)="register_clickHandler()"    
+    > Register</button>
+
+
+    <br/><br/>
+    
+
+</form>
